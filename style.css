@@ -1,10 +1,143 @@
 :root{
     --soft_BLue:rgb(83, 104, 223);
     --very_darBlue:rgb(37, 43, 70);
+    --soft_Red:rgb(250, 87, 87);
 }
 
 *{
+    font-family:'Rubik', sans-serif;
     padding: 0;
     margin: 0;
 
+}
+/*======================== Cabeçalho =====================*/
+
+header{
+    padding-left: 10%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img {
+    width: 150px;
+}
+
+.menu_header{
+    font-size: 14px;
+    margin: 10%;
+    flex-flow: row wrap;
+    font-family:'Rubik', sans-serif;
+    
+    display: flex;
+    width: 500px;
+    
+    justify-content:space-around;
+    align-items: center;
+    color: var(--very_darBlue);
+}
+.menu_header a{
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0.5rem;
+}
+.menu_header button{
+    padding: 0.8rem 1rem 0.8rem 1rem;
+    font-family:'Rubik', sans-serif;
+
+    color: white;
+    width: 120px;
+
+    border: none;
+    border-radius: .40rem;
+    background-color:var(--soft_Red);
+    box-shadow: 0px 7px 9px -5px rgba(83, 104, 223, 0.289);
+}
+
+/*================== links e botões ===================*/
+
+a{
+    text-decoration: none;
+    color: rgb(37, 43, 70);
+}
+
+/* =================== Página_1 =======================*/
+
+#Pg_1{
+    display: flex;
+    justify-content: space-between;
+}
+
+#info_p1{
+    margin-top: 10%;
+    font-size: 18px;
+    color: rgba(37, 43, 70, 0.6);
+    margin-left:10%;
+    width:470px;
+}
+
+#info_p1 h1{
+    padding-bottom: 2rem;
+    color: rgb(37, 43, 70);
+    font-size: 50px;
+    font-weight: 500;
+    font-family:'Rubik', 'sans-serif';
+}
+
+
+.bt_Get1{
+    margin-right: 2%;
+    margin-top:5%;
+
+   
+    font-size: 12px;
+    font-weight: 500;
+    height: 40px;
+   
+    color: white;
+    width: 130px;
+
+    border: none;
+    border-radius: .40rem;
+    background-color:var(--soft_BLue);
+    box-shadow: 0px 7px 9px -5px rgba(83, 104, 223, 0.289);
+}
+
+.bt_Get2{
+
+    margin-top:5%;
+
+    
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+   
+    color: rgba(37, 43, 70, 0.85);
+    width: 130px;
+
+    border: none;
+    border-radius: .40rem;
+    box-shadow: 0px 7px 9px -5px rgba(83, 104, 223, 0.289);
+}
+
+#img_svg_Pg1{
+    position:relative;
+    display: flex;
+    align-items: center;
+    margin-top:10%;
+
+}
+
+#img_svg_Pg1 img{
+    position: absolute;
+    right: 50px;
+}
+
+.decoration_section{
+    position: relative;
+    bottom: -100px;
+    border-bottom-left-radius: 40%;
+    width: 500px;
+    height: 350px;
+    background-color: var(--soft_BLue);
 }

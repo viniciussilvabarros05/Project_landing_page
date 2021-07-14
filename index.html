@@ -5,35 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href= "style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <header style="padding: 2rem 0 10rem; background-color: rgb(83, 104, 223);">
+    <header>
         <img src="./images/logo-bookmark.svg">
-        <a href="#">FEATURES</a>
-        <a href="#">PRINCING</a>
-        <a href="#">CONTACT</a>
-        <button>LOGIN</button>
+        <div class ="menu_header">
+             <a href="#">FEATURES</a>
+             <a href="#">PRINCING</a>
+             <a href="#">CONTACT</a>
+             <button>LOGIN</button>
+        </div>
     </header>
 
 
     <main>
+        
         <section id="Pg_1">
-            <div>
+            <div id= "info_p1">
                 <h1>A Simple Bookmark Manager</h1>
                 <p>A clean and simple interface to organize your favourite websites. Open a new Browser tab and see your sites load instantly. Try it for free.</p>
-                <button>get it on Chrome</button>
-                <button>get it on Firefox</button>
+                <button class="bt_Get1">Get it on Chrome</button>
+                <button class= "bt_Get2">Get it on Firefox</button>
             </div>
-            <div id="decoration_Pg1">
-                <img src="./images/illustration-hero.svg">
+            <div id="img_svg_Pg1">
                 <div class="decoration_section"></div>
+                <img src="./images/illustration-hero.svg">
             </div>
         </section>
         
-        
-        
-
         <section id="Pg_2">
 
             <div class= "text_explication">
@@ -53,7 +56,7 @@
             </div>
            
 
-            <div class="decoration_section"></div>
+            <div class="decoration_section2"></div>
 
 
             <div>
@@ -114,9 +117,6 @@
         
         </footer>
 
-
-
-    
 
     </main>
 
