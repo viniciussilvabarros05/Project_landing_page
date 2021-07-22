@@ -4,6 +4,11 @@
     --soft_Red:rgb(250, 87, 87);
 }
 
+@keyframes Transaction{
+    0% {left: 0px;}
+    100%{left: 100px;}
+}
+
 *{
     font-family:'Rubik', sans-serif;
     padding: 0;
@@ -124,12 +129,12 @@ a{
     position:relative;
     display: flex;
     align-items: center;
-    margin-top:10%;
+    margin-top:5%;
 
 }
 
-#img_svg_Pg1 img{
-    position: absolute;
+#img{
+    position:absolute;
     right: 50px;
 }
 
@@ -140,4 +145,44 @@ a{
     width: 500px;
     height: 350px;
     background-color: var(--soft_BLue);
+}
+
+
+#Pg_2{
+    margin-top: 150px;
+    display: block;
+    text-align: center;
+}
+
+.text_explication{
+    color:rgba(37, 43, 70, 0.6);
+    margin: auto; 
+    margin-bottom: 60px;
+    width: 500px;
+}
+.text_explication h1{
+    color: var(--very_darBlue);
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+
+@media(max-width: 1200px) {
+    #img{
+        animation-name: Transaction;
+        animation-fill-mode: forwards;
+       
+        animation-duration: 1s;
+        
+    }
+    .decoration_section{
+        left:60px;
+        animation-name: Transaction;
+        animation-fill-mode: forwards;
+       
+        animation-duration: 1s;
+        
+    }
+   
 }
