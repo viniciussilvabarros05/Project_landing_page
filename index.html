@@ -9,6 +9,32 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
     <title>Document</title>
+
+
+    <script>
+
+        function actived(i){
+            let tab1 = document.getElementById("tab1")
+            let tab2 = document.getElementById("tab2")
+            let tab3 = document.getElementById("tab3")
+            let array =[tab1, tab2, tab3]
+
+           for (index = 0; index < array.length; index++){
+               if (array[index] == i){
+                i.classList.add("actived")
+               }else{
+                   array[index].classList.remove("actived")
+               }
+           }       
+        }
+       
+
+    </script>
+
+
+
+
+
 </head>
 <body>
     <header>
@@ -34,7 +60,7 @@
             
             <div id="img_svg_Pg1">
                 <div class="decoration_section"></div>
-                <div id = "img"><img src="./images/illustration-hero.svg"></div>
+                <div class = "img"><img src="./images/illustration-hero.svg"></div>
             </div>
         </section>
         
@@ -47,26 +73,30 @@
             </div>
             
             <div class="menu_features">
-                <a href="#">Simple Bookmarking</a>
-                <a href="#">Speedy Searching</a>
-                <a href="#">Easy Sharing</a>
+                <a id = "tab1" onclick ="actived(this)">Simple Bookmarking</a>
+                <a id = "tab2" onclick = "actived(this)" >Speedy Searching</a>
+                <a id = "tab3" onclick = "actived(this)" >Easy Sharing</a>
+                
             </div>
-
+           
             <div id="decoration_Pg2">
-                 <img src="./images/illustration-features-tab-1.svg">
+                <div class="decoration_section2"></div>
+                <div class ="img2"><img src="./images/illustration-features-tab-1.svg"></div> 
+               
+                <div class="Info_Simple">
+                    <h1>Bookmark in one click</h1>
+                    <p>Organize your bookmarks however you like. 
+                    Our simple drag-and-drop interfaces gives you complete control 
+                    over how manage your favourite sites.</p>
+                    <button class="bt_Get1">More info</button>
+                </div>
             </div>
            
 
-            <div class="decoration_section2"></div>
+           
 
 
-            <div>
-                <h1>Bookmark in one click</h1>
-                <p>Organize your bookmarks however you like. 
-                Our simple drag-and-drop interfaces gives you complete control 
-                over how manage your favourite sites.</p>
-                <button>More info</button>
-            </div>
+          
 
         </section>
 
@@ -74,26 +104,26 @@
 
             <div class="Chrome">
                 <img src="./images/logo-chrome.svg">
-                <h4>Add to Chrome</h4>
+                <h3>Add to Chrome</h3>
                 <p>Minimum versio 62</p>
                 <img src="./images/bg-dots.svg">
-                <button class="bt_Card">Add & Install extension</button>
+                <button class="bt_Get1">Add & Install extension</button>
             </div>
 
             <div class="Firefox">
                 <img src="./images/logo-firefox.svg">
-                <h4>Add to Firefox</h4>
+                <h3>Add to Firefox</h3>
                 <p>Minimum versio 55</p>
                 <img src="./images/bg-dots.svg">
-                <button class="bt_Card">Add & Install extension</button>
+                <button class="bt_Get1">Add & Install extension</button>
             </div>
 
             <div class="Opera">
                 <img src="./images/logo-opera.svg">
-                <h4>Add to Opera</h4>
+                <h3>Add to Opera</h3>
                 <p>Minimum versio 46</p>
                 <img src="./images/bg-dots.svg">
-                <button class="bt_Card">Add & Install extension</button>
+                <button class="bt_Get1">Add & Install extension</button>
             </div>
 
         </section>
