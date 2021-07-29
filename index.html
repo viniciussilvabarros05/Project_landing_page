@@ -1,102 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href= "style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
     <title>Document</title>
 
-
-    <script>
-
-        function actived(i){
-            let tab1 = document.getElementById("tab1")
-            let tab2 = document.getElementById("tab2")
-            let tab3 = document.getElementById("tab3")
-            let array =[tab1, tab2, tab3]
-
-           for (index = 0; index < array.length; index++){
-               if (array[index] == i){
-                i.classList.add("actived")
-               }else{
-                   array[index].classList.remove("actived")
-               }
-           }       
-        }
-       
-
-    </script>
 
 
 
 
 
 </head>
+
 <body>
     <header>
         <img src="./images/logo-bookmark.svg">
-        <div class ="menu_header">
-             <a href="#">FEATURES</a>
-             <a href="#">PRINCING</a>
-             <a href="#">CONTACT</a>
-             <button>LOGIN</button>
+        <div class="menu_header">
+            <a href="#">FEATURES</a>
+            <a href="#">PRINCING</a>
+            <a href="#">CONTACT</a>
+            <button>LOGIN</button>
         </div>
     </header>
 
 
     <main>
-        
+
         <section id="Pg_1">
-            <div id= "info_p1">
+            <div id="info_p1">
                 <h1>A Simple Bookmark Manager</h1>
-                <p>A clean and simple interface to organize your favourite websites. Open a new Browser tab and see your sites load instantly. Try it for free.</p>
+                <p>A clean and simple interface to organize your favourite websites. Open a new Browser tab and see your
+                    sites load instantly. Try it for free.</p>
                 <button class="bt_Get1">Get it on Chrome</button>
-                <button class= "bt_Get2">Get it on Firefox</button>
+                <button class="bt_Get2">Get it on Firefox</button>
             </div>
-            
+
             <div id="img_svg_Pg1">
                 <div class="decoration_section"></div>
-                <div class = "img"><img src="./images/illustration-hero.svg"></div>
+                <div class="img"><img src="./images/illustration-hero.svg"></div>
             </div>
         </section>
-        
+
         <section id="Pg_2">
 
-            <div class= "text_explication">
+            <div class="text_explication">
                 <h1>Features</h1>
                 <p>Our aim is to make it quick and easy fo you to acess your favourite websites.
-                     Your bookmarks sync between your  devices so you can access them on the go </p>
+                    Your bookmarks sync between your devices so you can access them on the go </p>
             </div>
-            
+
             <div class="menu_features">
-                <a id = "tab1" onclick ="actived(this)">Simple Bookmarking</a>
-                <a id = "tab2" onclick = "actived(this)" >Speedy Searching</a>
-                <a id = "tab3" onclick = "actived(this)" >Easy Sharing</a>
-                
+                <a id="tab1" onclick="actived(this)">Simple Bookmarking</a>
+                <a id="tab2" onclick="actived(this)">Speedy Searching</a>
+                <a id="tab3" onclick="actived(this)">Easy Sharing</a>
+
             </div>
-           
+            <div id="container">
+            </div>
             <div id="decoration_Pg2">
                 <div class="decoration_section2"></div>
-                <div class ="img2"><img src="./images/illustration-features-tab-1.svg"></div> 
-               
+                <div class="img2"><img src="./images/illustration-features-tab-1.svg"></div>
+
                 <div class="Info_Simple">
                     <h1>Bookmark in one click</h1>
-                    <p>Organize your bookmarks however you like. 
-                    Our simple drag-and-drop interfaces gives you complete control 
-                    over how manage your favourite sites.</p>
+                    <p>Organize your bookmarks however you like.
+                        Our simple drag-and-drop interfaces gives you complete control
+                        over how manage your favourite sites.</p>
                     <button class="bt_Get1">More info</button>
                 </div>
             </div>
-           
+            <div id="decoration1_Pg2">
+                <div class="decoration_section2"></div>
+                <div class="img2"><img src="./images/illustration-features-tab-2.svg"></div>
 
-           
+                <div class="Info_Simple">
+                    <h1>Bookmark in one click</h1>
+                    <p>Organize your bookmarks however you like.
+                        Our simple drag-and-drop interfaces gives you complete control
+                        over how manage your favourite sites.</p>
+                    <button class="bt_Get1">More info</button>
+                </div>
+            </div>
+            <div id="decoration2_Pg2">
+                <div class="decoration_section2"></div>
+                <div class="img2"><img src="./images/illustration-features-tab-3.svg"></div>
 
-
-          
+                <div class="Info_Simple">
+                    <h1>Bookmark in one click</h1>
+                    <p>Organize your bookmarks however you like.
+                        Our simple drag-and-drop interfaces gives you complete control
+                        over how manage your favourite sites.</p>
+                    <button class="bt_Get1">More info</button>
+                </div>
+            </div>
 
         </section>
 
@@ -145,12 +147,15 @@
                 <img src="./images/icon-facebook.svg">
                 <img src="./images/icon-twitter.svg">
             </div>
-        
+
         </footer>
 
 
     </main>
 
 
+    <script src="script.js"> </script>
+
 </body>
+
 </html>

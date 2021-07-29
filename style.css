@@ -219,9 +219,26 @@ a{
 }
 
 #decoration_Pg2{
-    display: flex;
+    display:none;
+    visibility: hidden;
     position: relative;
 }
+#decoration1_Pg2{
+    display: none;
+    visibility: hidden;
+    position: relative;
+}
+#decoration2_Pg2{
+    display: none;
+    visibility: hidden;
+    position: relative;
+}
+#container{
+    display: flex;
+    visibility: visible;
+    position: relative;
+}
+
 .decoration_section2{
     position: absolute;
     bottom: -100px;
