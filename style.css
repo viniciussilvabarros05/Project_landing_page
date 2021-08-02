@@ -9,7 +9,7 @@
     100%{right: -120px;}
 }
 @keyframes Transaction_menu{
-    0% {left:0px;}
+    0% {left:-1000px;}
     100%{left: -100px;}
 }
 
@@ -33,7 +33,6 @@ header{
 header img {
     width: 150px;
 }
-
 .menu_header{
     font-size: 14px;
     margin: 10%;
@@ -52,6 +51,9 @@ header img {
     margin-right: 5px;
     padding: 0.5rem;
 }
+.menu_header a:hover{
+    color: var(--soft_Red);
+}
 .menu_header button{
     padding: 0.8rem 1rem 0.8rem 1rem;
     font-family:'Rubik', sans-serif;
@@ -64,7 +66,12 @@ header img {
     background-color:var(--soft_Red);
     box-shadow: 0px 7px 9px -5px rgba(83, 104, 223, 0.289);
 }
-
+.menu_header button:hover{
+    background-color: white;
+    border: solid var(--soft_Red);
+    color: var(--soft_Red);
+    opacity: 0.8;
+}
 /*================== links e botões ===================*/
 
 a{
@@ -125,7 +132,6 @@ a{
     display: flex;
     justify-content: space-between;
 }
-
 #info_p1{
     margin-top: 10%;
     font-size: 18px;
@@ -133,7 +139,6 @@ a{
     margin-left:10%;
     width:470px;
 }
-
 #info_p1 h1{
     padding-bottom: 2rem;
     color: rgb(37, 43, 70);
@@ -141,10 +146,6 @@ a{
     font-weight: 500;
     font-family:'Rubik', 'sans-serif';
 }
-
-
-
-
 #img_svg_Pg1{
     position:relative;
     display: flex;
@@ -152,12 +153,10 @@ a{
     margin-top:5%;
 
 }
-
 .img{
     position:absolute;
     right: 50px;
 }
-
 .decoration_section{
     position: relative;
     bottom: -100px;
@@ -166,8 +165,6 @@ a{
     height: 350px;
     background-color: var(--soft_BLue);
 }
-
-
 #Pg_2{
     position: relative;
     margin-top: 150px;
@@ -180,7 +177,7 @@ a{
     color:rgba(37, 43, 70, 0.6);
     margin: auto; 
     margin-bottom: 60px;
-    width: 500px;
+    max-width: 500px;
 }
 .text_explication h1{
     color: var(--very_darBlue);
@@ -188,6 +185,8 @@ a{
     font-size: 30px;
     margin-bottom: 50px;
 }
+
+
 
 /*====================== PÁGINA 2 =================================*/
 .menu_features{
@@ -199,7 +198,6 @@ a{
     justify-content: center;
     border-bottom: solid 1px rgba(37, 43, 70, 0.2);
 }
-
 .menu_features a {
     color: rgba(37, 43, 70, 0.6);
     border-spacing:0;
@@ -207,7 +205,6 @@ a{
     width: 300px;
    
 }
-
 .menu_features a:hover{
     color: var(--soft_Red);
    
@@ -217,7 +214,6 @@ a{
     box-sizing: border-box;
     border-bottom: var(--soft_Red) solid 5px;
 }
-
 #decoration_Pg2{
     display:none;
     visibility: hidden;
@@ -250,7 +246,7 @@ a{
 }
 
 .img2{
-    margin-left:10% ;
+    margin-left:20% ;
     position: relative;
 }
 
@@ -272,10 +268,29 @@ a{
 
 /*========================== PÁGINA 3 ==============================*/
 
+.download_extensions{
+    
+    color: rgba(37, 43, 70, 0.6);
+    text-align: center;
+    margin: auto;
+    margin-top: 20%;
+    max-width: 600px;
+    position: relative;
+
+    
+}
+.download_extensions h1{
+    font-weight: 500;
+    color: var(--very_darBlue);
+    margin-bottom: 30px;
+}
+
 #Pg_3{
-    margin-top:20%;
+    margin-top:5%;
     margin-bottom:20%;
     display: flex;
+    flex-wrap: wrap;
+
     justify-content: center;
     align-content: center; 
     
@@ -332,7 +347,101 @@ a{
 
 
 
+/*========================== FOOTER ==================================*/
+footer{
+    color: white;
+    background-color: var(--soft_BLue);
+}
+#about_footer{
+    letter-spacing: 5px;
+    word-spacing:10px;
+    font-size: 14px;
+
+    display: flex;
+    box-sizing: border-box;
+    max-width: 500px;
+    margin: auto;
+    flex-direction: column;
+    
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+
+}
+#about_footer h1{
+    word-spacing: 0;
+    letter-spacing: 0;
+    margin-bottom: 3rem;   
+    font-weight: 500;
+}
+#input{
+    padding-left: 1rem;
+    border: none;
+    border-radius: 0.3rem;
+    width: 70%;
+    height: 50px;
+    margin-right: 2%;
+}
+#submit{
+    font-weight: 500;
+    border: none;
+    border-radius: 0.3rem;
+    width: 20%;
+    height: 48px;
+    background-color: var(--soft_Red);
+    color:white;
+}
+#submit:hover{
+    border: solid var(--soft_Red);
+    background-color: white;
+    
+    color: var(--soft_Red);
+}
+#footer{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--very_darBlue);
+}
+#footer a{
+    color: white;
+}
+#footer a:hover{
+    color: var(--soft_Red);
+}
+#menu_footer{
+    font-size: 14px;
+    margin-left: 10%;
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    color: white;
+}
+#social{
+    width: 150px;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+}
+
+.social_hover{
+    fill: var(--soft_Red);
+}
+#social a:hover{
+
+}
+
+
+
+/*=========================== ANIMATIONS =============================*/
 @media(max-width: 1200px) {
+
+
+
     .img{
         animation-name: Transaction;
         animation-fill-mode: forwards;
@@ -347,19 +456,31 @@ a{
         animation-duration: 1s;
         
     }
+   
+}
+
+@media(max-width:1900px){
     .decoration_section2{
         right:0;
         animation-name: Transaction_menu;
         animation-fill-mode: forwards;
-       
+    
         animation-duration: 1s;
         
     }
     .img2{
         animation-name: Transaction_menu;
         animation-fill-mode: forwards;
-       
+    
         animation-duration: 1s;
-        
+       
+    }
+    
+    .Info_Simple{
+        animation-name: Transaction_menu;
+        animation-fill-mode: forwards;
+        position: relative;
+    
+        animation-duration: 1s;
     }
 }

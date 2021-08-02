@@ -43,3 +43,14 @@ function actived(i) {
 
 }
 
+function hover_svg(i){
+   
+    var svg = i
+    svg.classList.add("social_hover")
+}
+
+function out_svg(i){
+    var svg = i
+    svg.classList.toggle("social_hover")
+}
+
