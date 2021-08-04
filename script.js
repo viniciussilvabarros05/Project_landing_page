@@ -7,7 +7,6 @@ let input = document.getElementById("input")
 let submit = document.getElementById("submit")
 let alert = document.querySelector(".alert_error_email")
 let erro = document.querySelector(".image_error")
-console.log(erro)
 
 
 
@@ -47,9 +46,6 @@ function actived(i) {
 
 }
 
-
-
-
 function hover_svg(i) {
 
     var svg = i
@@ -76,7 +72,6 @@ function submit_email() {
         }
     }
 }
-
 
 function email_length() {
 
