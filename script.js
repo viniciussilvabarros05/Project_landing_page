@@ -62,17 +62,17 @@ function out_svg(i) {
 }
 
 function submit_email() {
-    for (i of input.value) {
+  
 
-        if ( i!=="@" ) {
-            console.log("Tá errado")  
-            alert.classList.add("alert")
-            erro.classList.add("alert")
-
-        }else{
+    for (let i = 0;i< email_length(); i++) {
+       let index = input.value[i]
+        if ( index == "@" && email_length() >10) {
             alert.classList.remove("alert")
             erro.classList.remove("alert")
-            input.value = ""
+            input.value = ""   
+        }else{
+            alert.classList.add("alert")
+            erro.classList.add("alert")
         }
     }
 }
@@ -83,3 +83,4 @@ function email_length() {
     input.value.length
     return input.value.length
 }
+
