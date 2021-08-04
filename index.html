@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="./images/favicon-32x32.png" rel="icon">
-    <title>Document</title>
+    <title>Bookmark</title>
 
 
 
@@ -143,9 +143,13 @@
         <div id="about_footer">
             <p>35.000+ ALREADY JOINED</p>
             <h1>Stay-up-to-date with what we´re doing</h1>
-            <div>
-                <input id="input" type="text" placeholder="Enter your email address">
-                <input id="submit" type="submit" value="Contact Us">
+            <div id="email_view"> 
+                
+                <div class="alert_error_email"><p>Whoops, email invalid</p>  </div>
+                
+                <input  id="input" type="text" placeholder="Enter your email address">
+                <input onclick="submit_email()" id="submit" type="submit" value="Contact Us">
+                <img class= "image_error" src="./images/icon-error.svg">
             </div>
         </div>
 
