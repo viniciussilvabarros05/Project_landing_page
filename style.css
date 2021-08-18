@@ -13,7 +13,19 @@
     100%{left: -100px;}
 }
 
+body{
+    position: relative;
+    display: grid;
+    grid-template-areas:"header" 
+                        "main"
+                        "footer";
+                          
+}
 
+main{
+    grid-area: main;
+    width: 100%;
+}
 
 *{
     font-family:'Rubik', sans-serif;
@@ -24,6 +36,7 @@
 /*======================== Cabeçalho =====================*/
 
 header{
+    grid-area: header;
     padding-left: 10%;
     height: 120px;
     display: flex;
@@ -161,8 +174,11 @@ a{
     position: relative;
     bottom: -100px;
     border-bottom-left-radius: 40%;
-    width: 500px;
-    height: 350px;
+    
+    max-width: 500px;
+    min-height: 350px;
+    min-width: 500px;
+    min-height: 350px;
     background-color: var(--soft_BLue);
 }
 #Pg_2{
@@ -349,6 +365,7 @@ a{
 
 /*========================== FOOTER ==================================*/
 footer{
+    grid-area: footer;
     color: white;
     background-color: var(--soft_BLue);
 }
@@ -484,7 +501,7 @@ footer{
 /*=========================== ANIMATIONS =============================*/
 @media(max-width: 1200px) {
 
-
+    
 
     .img{
         animation-name: Transaction;
