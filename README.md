@@ -12,7 +12,7 @@ Proposal made by Frontend mentor website. It's also the first landing page I mad
 
 # A PRESENTATION
 
- <a href="https://project-landing-page-seven.vercel.app/"> ![Landing_page](https://user-images.githubusercontent.com/58434465/128177763-21db54f6-61b0-43fe-a419-859be1ea013c.gif)</a>
+ <a target="_blank" href="https://project-landing-page-seven.vercel.app/"> ![Landing_page](https://user-images.githubusercontent.com/58434465/128177763-21db54f6-61b0-43fe-a419-859be1ea013c.gif)</a>
 
 
 ## Autoria
